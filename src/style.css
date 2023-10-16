@@ -1,35 +1,34 @@
-@import "~bootstrap/dist/css/bootstrap.min.css";
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background: green;
+}
 
-.card {
+.center-container {
+  text-align: center;
+}
+
+.carta {
   width: 150px;
   height: 220px;
   background-color: white;
   border: 1px solid #000;
   text-align: center;
-  font-size: 48px;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
-.suit {
-  font-size: 60px;
+.numero {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 100px; /* Establecer la altura igual a la altura de la carta */
 }
 
-.heart {
-  color: red;
-}
-
-.spade {
-  color: black;
-}
-
-.club {
-  color: black;
-}
-
-.diamond {
-  color: red;
+.palo {
+  font-size: 48px;
 }
