@@ -31,8 +31,14 @@ const generarCartaAleatoria = () => {
   const paloAleatorio = palos[Math.floor(Math.random() * palos.length)];
 
   const carta = document.getElementById("carta");
+  const palosElementos = carta.querySelectorAll(".palo");
+
+  // Actualizar ambos elementos de clase "palo" con el mismo palo aleatorio
+  palosElementos.forEach(paloElemento => {
+    paloElemento.textContent = paloAleatorio;
+  });
+
   carta.querySelector(".numero").textContent = numeroAleatorio;
-  carta.querySelector(".palo").textContent = paloAleatorio;
 };
 
 document

@@ -12,23 +12,31 @@ body {
 }
 
 .carta {
-  width: 150px;
-  height: 220px;
+  width: 160px;
+  height: 250px;
   background-color: white;
   border: 1px solid #000;
-  text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 10px; /* Agrega un espacio de relleno para los elementos */
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .numero {
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
-  line-height: 100px; /* Establecer la altura igual a la altura de la carta */
 }
 
 .palo {
-  font-size: 48px;
+  font-size: 36px;
+  line-height: 0;
+  margin-top: 10px; /* Ajusta la distancia entre los palos y los números */
+  margin-bottom: 10px;
 }
